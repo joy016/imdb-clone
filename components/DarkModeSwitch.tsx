@@ -20,6 +20,8 @@ const DarkModeSwitch = () => {
 
   const currentTheme = theme === 'system' ? systemTheme : theme;
 
+  console.log('check lang', theme);
+
   return (
     <>
       {mounted &&

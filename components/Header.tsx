@@ -10,6 +10,7 @@ import styled from '@emotion/styled';
 
 import Link from 'next/link';
 import DarkModeSwitch from './DarkModeSwitch';
+import { useTheme } from 'next-themes';
 
 const CustomBox = styled(Box)`
   padding: 0 20px;
@@ -18,6 +19,8 @@ const CustomBox = styled(Box)`
 `;
 
 const Header = () => {
+  const { systemTheme, theme, setTheme } = useTheme();
+
   return (
     <>
       <Box

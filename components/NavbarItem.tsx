@@ -14,8 +14,6 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ title, param }) => {
   const searchParams = useSearchParams();
   const genre = searchParams.get('genre');
 
-  console.log(genre);
-
   const StyledTypography = styled(Typography)`
     font-weight: bold;
     color: #000;

@@ -11,13 +11,16 @@ const Navbar = () => {
         spacing={3}
         height="3em"
         sx={{
-          backgroundColor: '#BFCCB5',
+          backgroundColor: '#FEF3c7',
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-        <NavbarItem title="Trending" param="fetchTrending" />
-        <NavbarItem title="Top Rated" param="fetchTopRated" />
+        <NavbarItem
+          title="Most Popular Movies"
+          param="fetchMostPopularMovies"
+        />
+        <NavbarItem title="Coming Soon" param="fetchComingSoon" />
       </Stack>
     </>
   );
